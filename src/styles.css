@@ -1,0 +1,224 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./images/641.jpg');
+    background-size: cover;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 62%;
+    background-color: #ffde73;
+    padding: 50px 50px;
+    margin: 46px 0px;
+    border-radius: 30px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Potta One', cursive;
+    font-size: 45px;
+    background-color: #ffc60b;
+    clip-path: polygon(0 33.3%, 5% 0, 95% 0, 100% 33.3%, 100% 66.6%, 95% 100%, 5% 100%, 0 66.6%);
+    box-sizing: border-box;
+    padding: 0px 80px;
+}
+
+.heading-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    background-color: #c16a08;
+    clip-path: polygon(0 33.3%, 6% 0, 94% 0, 100% 33.3%, 100% 66.6%, 94% 100%, 6% 100%, 0 66.6%);
+    padding: 10px;
+    position: relative;
+}
+
+.decoration {
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+}
+
+.bee-left {
+    top: 5px;
+    left: 30px;
+}
+
+.bee-right {
+    transform: rotate(-240deg);
+    bottom: 1px;
+    right: 37px;
+}
+
+.comb-outer {
+    background-color: #c16a08;
+    width: 450px;
+    padding: 20px;
+    clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+}
+
+.comb-inner {
+    background-color: #ffc60b;
+    padding: 30px 20px 30px 20px;
+    clip-path: polygon(0 20%, 10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%);
+}
+
+.customer {
+    margin-top: 20px;
+    margin-left: 36px;
+}
+
+.hive {
+    width: 10%;
+    top: 190px;
+    left: 45%;
+}
+
+.hours {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    padding-left: 36px;
+}
+
+.location {
+    text-align: center;
+}
+
+footer {
+    width: 100vw;
+    font-size: 12px;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffde73;
+    padding: 20px 0px 20px 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+nav {
+    background-color: #ffde73;
+    padding: 6px 0px 0px 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+button {
+    background-color: #ffde73;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    padding: 8px 26px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(236,164,59);
+}
+
+.person {
+    margin-bottom: 16px;
+}
+
+.info {
+    padding-left: 50px;
+}
